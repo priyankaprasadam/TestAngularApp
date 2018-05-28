@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-12" style="height:100%">
+        <div class="container data-container" *ngIf="!CreateComponent && !isLoading">
+          <div class="col-sm-12" style="float:left;padding: 15px;">
+            <a href="/"><div class="col-sm-3" style="background-color: rebeccapurple; text-align: left;color: white;padding: 10px;">Posts For You</div></a>
+            <button class="btn btn-primary btn-cat" style="float:right;background-color: rebeccapurple;border-radius:0px;" (click)="onCreateNewPost()">Create New Post +</button>
+          </div>
+          <div #parent></div>
+        </div>
+    </div>
+  </div>
+</div>

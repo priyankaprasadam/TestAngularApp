@@ -1,0 +1,18 @@
+.data-container {
+  padding-bottom: 10px;
+  margin-top: 30px;
+  /*overflow-y: auto;*/
+}
+
+.loader {
+  z-index:2000!important;
+  margin-top: 20%;
+  margin-left: 48%;
+}
+
+#loader {
+  width: 150px;
+  height: 150px;
+  background: white url('../../../assets/images/Spinner-rebeccapurple-200px.gif') no-repeat center center;
+}
+

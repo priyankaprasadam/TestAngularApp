@@ -1,0 +1,22 @@
+<div class="col-sm-12 panel panel-default" style="float: left;padding: 0;border: none;box-shadow: none;">
+  <div class="panel-body col-sm-12" style="padding-bottom:10px !important;overflow-y: auto;overflow-x: hidden;">
+    <div *ngFor="let item of posts; let index = index" class="col-sm-3" style="float:left">
+      <div class="form-group" style="border: 1px solid rebeccapurple;padding: 10px;">
+        <div class="form-group">
+          <label for="name" (click)="updatePostData(item)" style="width:90%">
+            {{item.name}}
+          </label>
+          <a class="pull-right" (click)="DeletePostData(item)">
+            <span class="glyphicon glyphicon-remove"></span>
+          </a>
+        </div>
+        <div class="form-group m_margin"  (click) ="updatePostData(item)">
+          {{item.body}}
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-sm-10 m_margin" style="border: 1px solid rebeccapurple;padding: 50px 15px;" *ngIf="posts.length <= 0">
+      Ohh..Your Board Seems to be empty.. Try to create your first post here..
+    </div>
+  </div>
+</div>
